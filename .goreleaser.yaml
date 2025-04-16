@@ -27,12 +27,13 @@ builds:
 
 # Make binaries available with the same naming format as before
 archives:
-  - format: binary
+  - formats: binary
     name_template: >-
       {{ .ProjectName }}-
       {{- if eq .Os "darwin" }}osx
       {{- else }}{{ .Os }}{{ end }}-
       {{- .Arch }}
+wrap_in_directory: false
 
 # Create distribution packages
 nfpms:
