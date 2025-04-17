@@ -307,12 +307,11 @@ where ISSUER, CLIENT_ID and CLIENT_SECRET correspond to the issuer client ID and
 For example if the issuer is `https://authentik.local/application/o/opkssh/` and the client ID was `ClientID123`:
 
 ```bash
-opkssh login --provider="https://authentik.local/application/o/opkssh/,ClientID123,"
+opkssh login --provider="https://authentik.local/application/o/opkssh/,ClientID123"
 ```
-
 to specify scopes
 ```bash
-opkssh login --provider="https://authentik.local/application/o/opkssh/,ClientID123,openid profile email groups"
+opkssh login --provider="https://authentik.local/application/o/opkssh/,ClientID123,,openid profile email groups"
 ```
 
 You can use this shortcut which will use a provider alias to find the provider.
