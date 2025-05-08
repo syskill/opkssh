@@ -1,7 +1,7 @@
 # Policy plugins
 
 Inspired by the power of [the OpenSSH AuthorizedKeysCommand](https://man.openbsd.org/sshd_config.5#AuthorizedKeysCommand), opkssh provides policy plugins.
-These policy plugins provide a simple way to bring your own policy which exends the default opkssh policy.
+These policy plugins provide a simple way to bring your own policy which extends the default opkssh policy.
 
 To use your own policy create a policy plugin config file in `/etc/opk/policy.d`. This config files specifies what command you want to calls out to evaluate policy. If the command returns anything else other than "allowed" and exit code 0, this is viewed as a policy rejection.
 
