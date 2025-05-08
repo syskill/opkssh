@@ -37,7 +37,7 @@ fi
 ```
 
 **Important:** If you have multiple policy plugins only one of them needs to return "allow" for the action to be allowed.
-If you added five policy plugins and four them say "deny" and one of them says "allow" the allow wins out. Additionally policy plugins do not disable standard policy.
+If you added five policy plugins and four of them say "deny" and one of them says "allow" the allow wins out. Additionally policy plugins do not disable standard policy.
 To completely turn off standard policy and only use policy plugins ensure all auth_id files are empty.
 
 The pseudocode policy is:
