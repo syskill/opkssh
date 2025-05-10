@@ -261,13 +261,13 @@ if command -v $INSTALL_DIR/$BINARY_NAME &> /dev/null; then
     if [ ! -e "/etc/opk" ]; then
         mkdir -p /etc/opk
         chown root:${AUTH_CMD_GROUP} /etc/opk
-        chmod 751 /etc/opk
+        chmod 750 /etc/opk
     fi
 
     if [ ! -e "/etc/opk/policy.d" ]; then
         mkdir -p /etc/opk/policy.d
         chown root:${AUTH_CMD_GROUP} /etc/opk/policy.d
-        chmod 751 /etc/opk/policy.d
+        chmod 750 /etc/opk/policy.d
     fi
 
     if [ ! -e "/etc/opk/auth_id" ]; then
