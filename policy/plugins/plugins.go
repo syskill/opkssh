@@ -21,7 +21,6 @@ import (
 	"encoding/base64"
 	"fmt"
 	"io/fs"
-	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
