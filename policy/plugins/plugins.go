@@ -140,9 +140,6 @@ func (p *PolicyPluginEnforcer) loadPlugins(dir string) (pluginResults PluginResu
 				continue
 			}
 
-			// TODO: Delete
-			log.Printf("Parsing %s\n", file)
-
 			var cmd PluginConfig
 			if err := yaml.Unmarshal(file, &cmd); err != nil {
 				pluginResult.Error = fmt.Errorf("failed to parse YAML in policy plugin config at (%s): %w", path, err)
