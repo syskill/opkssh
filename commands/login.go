@@ -616,7 +616,7 @@ func (l *LoginCmd) writeKeysToOpkSSHDir(secKeyPem []byte, certBytes []byte) erro
 	sshKeyName := l.makeSSHKeyFileName(l.pkt)
 
 	privKeyPath := filepath.Join(opkSshUserPath, sshKeyName)
-	pubKeyPath := filepath.Join(privKeyPath + ".pub")
+	pubKeyPath := filepath.Join(privKeyPath + "-cert.pub")
 
 	// get key comment
 	issuer, err := l.pkt.Issuer()
